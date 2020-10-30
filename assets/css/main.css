@@ -2674,14 +2674,14 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 7em;
 		}
 
 		#nav {
-		cursor: default;
-		background-color: #4b4b4b;
-		padding: 0;
-	}
+			cursor: default;
+			background-color: #4b4b4b;
+			padding: 0;
+		}
 
 		#nav:after {
 			content: '';
@@ -2796,14 +2796,17 @@ input, select, textarea {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 0.2em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
+			border-top: solid 3px #efefef;
 			margin: 2em 0 0 0;
 			padding: 2em 0 0 0;
+			margin-left: 2em;
+			margin-right: 2em;
+
 		}
 
 			#main > section:first-child {
@@ -3144,7 +3147,7 @@ input, select, textarea {
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 3em 3em 3em 3em;
+				padding: 1em 1em 1em 1em;
 				width: calc(100% - 30%);
 			}
 
@@ -3173,7 +3176,7 @@ input, select, textarea {
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 6em 4em;
+				padding: 3em 3em;
 				position: relative;
 				text-align: center;
 				top: auto;
@@ -3226,7 +3229,7 @@ input, select, textarea {
 
 			#main {
 				margin: 0;
-				padding: 6em 4em;
+				padding: 1em 1em 1em 1em;
 				width: 100%;
 			}
 
@@ -3293,12 +3296,13 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
+				padding: 1em 1em 1em 1em;
+
 			}
 
 				#main > section {
-					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
+					margin-left: 1.5em;
 				}
 
 		/* Poptrox */
