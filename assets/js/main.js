@@ -51,9 +51,6 @@
 		}
 
 	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-		});
 
 		breakpoints.on('>medium', function() {
 			$footer.appendTo($header);
@@ -66,16 +63,10 @@
 			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
 				if (browser.name == 'ie'
 				||	browser.mobile)
-					settings.parallax = false;
+					settings.parallax = true;
 
 			if (settings.parallax) {
 
-				breakpoints.on('<=medium', function() {
-
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
-
-				});
 
 				breakpoints.on('>medium', function() {
 
@@ -109,7 +100,7 @@
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
 					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+					windowMargin: 50)
 				});
 
 			});
