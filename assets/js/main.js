@@ -70,12 +70,7 @@
 
 			if (settings.parallax) {
 
-				breakpoints.on('<=medium', function() {
-
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
-
-				});
+				
 
 				breakpoints.on('>medium', function() {
 
