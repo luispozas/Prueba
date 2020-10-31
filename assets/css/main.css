@@ -133,7 +133,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		font-size: 14pt;
 	}
 
@@ -154,7 +154,7 @@ input, select, textarea {
 
 	subra {
 		color: #ffffff;
-		 background-color: #277899;
+		background-color: #277899;
 	}
 
 	h1 {
@@ -2800,6 +2800,12 @@ input, select, textarea {
 		padding: 0.2em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
+
+		#main > p{
+			margin: 0 0 1em 0;
+			margin-left: 2em;
+			font-size: 14pt;
+		}
 
 		#main > section {
 			border-top: solid 3px #efefef;
