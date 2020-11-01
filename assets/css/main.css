@@ -1,14 +1,8 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, subra, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p, fraseTop, subra, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -32,7 +26,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
 
 ol, ul {
 	list-style: none;
@@ -125,31 +118,28 @@ input, select, textarea {
 	strong, b {
 		color: #3a3d3f;
 		font-weight: 400;
-		font-size: 17pt;
 	}
 
 	em, i {
 		font-style: italic;
 	}
 
-	p {
-		margin: 0 0 1em 0;
-		font-size: 14pt;
+	p, fraseTop {
+		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6, subra {
 		color: #787878;
-		font-weight: 600;
-		line-height: 1.75em;
+		font-weight: 400;
+		line-height: 1em;
 		margin: 0 0 1em 0;
-
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
-			border-bottom: 4px solid #277899; 
-            color: #787878;
+			border-bottom: 4px solid #277899;
+			color: #787878;
 		}
 
 	subra {
@@ -158,22 +148,22 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.3em;
+		font-size: 2em;
 		line-height: 1.5em;
 	}
 
 	h2 {
-		font-size: 1.8em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
 	h3 {
-		font-size: 1.55em;
+		font-size: 1.25em;
 		line-height: 1.5em;
 	}
 
 	h4 {
-		font-size: 1.3em;
+		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 
@@ -1988,6 +1978,8 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
+
+
 /* Menu */
 
 	ul.menu {
@@ -2035,7 +2027,6 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		color: rgba(39, 120, 153, 1);
 	}
 
 		.icon:before {
@@ -2166,7 +2157,7 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 20%;
+			border-radius: 100%;
 		}
 
 			.image.avatar:before {
@@ -2175,9 +2166,7 @@ input, select, textarea {
 
 			.image.avatar img {
 				border-radius: 100%;
-				width: 150px; 
-				height: 150px;
-				margin: 0 0 0 -2.25em;
+				width: 100%;
 			}
 
 /* List */
@@ -2265,7 +2254,7 @@ input, select, textarea {
 			}
 
 			ul.labeled-icons li h3 {
-				color: rgba(39, 120, 153, 0.4);
+				color: #b2b2b2;
 				left: 0;
 				position: absolute;
 				text-align: center;
@@ -2423,7 +2412,7 @@ input, select, textarea {
 
 		table th {
 			color: #787878;
-			font-size: 1.1em;
+			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
@@ -2654,8 +2643,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
-			margin-bottom: 1em;
-			margin: 0;
+			margin: 0 0 2em 0;
 		}
 
 		#header strong, #header b {
@@ -2675,9 +2663,8 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6em;
+			width: 6.25em;
 		}
-
 		#nav {
 			cursor: default;
 			background-color: #4b4b4b;
@@ -2755,6 +2742,7 @@ input, select, textarea {
 					display: none;
 				}
 
+
 /* Footer */
 
 	#footer .icons {
@@ -2767,7 +2755,7 @@ input, select, textarea {
 
 	#footer .copyright {
 		color: rgba(255, 255, 255, 0.4);
-		font-size: 1em;
+		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
 		padding: 0;
@@ -2791,7 +2779,6 @@ input, select, textarea {
 				color: inherit;
 			}
 
-
 /* Main */
 
 	#main {
@@ -2801,10 +2788,11 @@ input, select, textarea {
 		width: calc(100% - 35%);
 	}
 
-		#main > p{
-			margin: 0 0 1em 0;
+		#main > fraseTop{
+
 			margin-left: 2em;
-			font-size: 14pt;
+			margin-right: 2em;
+			font-size: 17pt;
 		}
 
 		#main > section {
@@ -2813,7 +2801,6 @@ input, select, textarea {
 			padding: 2em 0 0 0;
 			margin-left: 2em;
 			margin-right: 2em;
-
 		}
 
 			#main > section:first-child {
@@ -3122,14 +3109,10 @@ input, select, textarea {
 				padding: 6em 3em 3em 3em;
 				width: 30%;
 			}
-				#header strong {
-					font-size: 1.1em;
-				}
 
 				#header h1 {
-					font-size: 1.5em;
+					font-size: 1.25em;
 				}
-
 
 					#header h1 br {
 						display: none;
@@ -3154,7 +3137,7 @@ input, select, textarea {
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 1em 1em 1em 1em;
+				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
 
@@ -3183,7 +3166,7 @@ input, select, textarea {
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 3em 3em;
+				padding: 6em 4em;
 				position: relative;
 				text-align: center;
 				top: auto;
@@ -3225,7 +3208,7 @@ input, select, textarea {
 				}
 
 					#footer .copyright li {
-						border-left-width: 8px;
+						border-left-width: 1px;
 						display: inline-block;
 						line-height: 1em;
 						margin-left: 0.75em;
@@ -3236,7 +3219,7 @@ input, select, textarea {
 
 			#main {
 				margin: 0;
-				padding: 1em 1em 1em 1em;
+				padding: 6em 4em;
 				width: 100%;
 			}
 
@@ -3290,10 +3273,6 @@ input, select, textarea {
 					font-size: 1.35em;
 				}
 
-				#header strong {
-					font-size: 1.35em;
-				}
-
 		/* Footer */
 
 			#footer {
@@ -3303,13 +3282,12 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 1em 1em 1em 1em;
-
+				padding: 2.25em 1.5em 0.25em 1.5em;
 			}
 
 				#main > section {
+					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
-					margin-left: 1.5em;
 				}
 
 		/* Poptrox */
