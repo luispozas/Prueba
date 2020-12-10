@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Curriculum web</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=0.6, user-scalable=yes" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/foto.jpg" alt="" /></a>
+				<h2>LUIS POZAS PALOMO <br /></h2>
+				<h1> Ingeniería Informática,
+				 Ciencias de la Computación.<br />
+				</h1>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">SOBRE MI</a></li>
+					<li><a href="practicas.html">PRÁCTICAS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li  class="current" ><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+
+			<br />
+
+			<Script Language="JavaScript">
+				hoje = new Date()
+				numero_de_textos = 7
+				segundos = hoje.getSeconds()
+				numero = segundos % numero_de_textos
+				if (numero == 0){
+					texto = "A good tool improves the way you work. A great tool improves the way you think."
+					autor = " -Jeff Duntemann"
+				}
+				if (numero == 01){
+					texto = "Even a stopped clock is right twice a day."
+					autor = " -Marie von Ebner-Eschenbach"
+				}
+				if (numero == 02){
+					texto = "A government that is big enough to give you all you want is big enough to take it all away."
+					autor = " -Thomas Jefferson"
+				}
+				if (numero == 03){
+					texto = "When I was a boy I was told that anybody could become President. Now I'm beginning to believe it."
+					autor = " -Clarence Darrow"
+				}
+				if (numero == 04){
+					texto = "I took a speed reading course and read 'War and Peace' in twenty minutes. It involves Russia."
+					autor = " -Woody Allen"
+				}
+				if (numero == 05){
+					texto = "I don't necessarily agree with everything I say."
+					autor = " -Marshall McLuhan"
+				}
+				if (numero == 06){
+					texto = "If the phone doesn't ring, it's me."
+					autor = " -Jimmy Buffet"
+				}
+				document.write("<fraseTop>"+ texto +"&nbsp&nbsp <strong>" + autor +"</strong></fraseTop>")
+			</script>
+
+
+			<!-- Deshabilitar copia/pega -->
+			<!--
+			<script language="Javascript">
+				function disableselect(e){
+				return false
+				}
+				function reEnable(){
+				return true
+				}
+				document.onselectstart=new Function ("return false")
+				if (window.sidebar){
+				document.onmousedown=disableselect
+				document.onclick=reEnable
+				}
+			</script>
+			-->
+
+		    <section>
+		    	<br>
+		    	<div class="box highlight">
+
+		    		<h1 align="center" class="icon regular fa-envelope"> &nbsp <a> CONTACTO </a> </h1>
+		    		<p align="center" > En caso de que tengas una sugerencia, felicitaciones o reclamos, puedes ponerte en contacto conmigo, preferiblemente a traves de correo electrónico.</p>
+
+		    		<h4 href="mailto:luispozaspalomo@gmail.com" align = "center"> luis.pozaspalomo@gmail.com</h4>
+					
+				</div>
+		    </section>
+   			<br>
+   		</div>
+
+		<br />
+		
+		<!-- Footer -->
+		<footer id="footer">
+			<div id="fechahoy"></div>	
+
+			<script>
+			var d=new Date();var month=new Array(12);month[0]='Enero';month[1]='Febrero';month[2]='Marzo';month[3]='Abril';month[4]='Mayo';month[5]='Junio';month[6]='Julio';month[7]='Agosto';month[8]='Septiembre';month[9]='Octubre';month[10]='Noviembre';month[11]='Diciembre';var todaysDate=+d.getDate()+' de '+month[d.getUTCMonth()]+' del '+d.getUTCFullYear();
+			document.getElementById('fechahoy').innerHTML= todaysDate;
+			</script>
+
+			<script>
+				var ran
+				ran = Math.round(Math.random()*100 + 223)
+				document.write("Visitante <strong>" + ran + "</strong> de esta página.")
+			</script>
+
+			<div class="inner">
+				<br />
+				<ul class="copyright">
+					<li>&copy; Luis Pozas. All rights reserved</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
